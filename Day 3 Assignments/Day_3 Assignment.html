@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <center><u><b>> | | | | | | Let's Upgrade Javascript Essentials | | | | | | </b></u></center>
+    </h1>
+
+    <h1>
+        <center><u><b>> | | | | | | Day 3 Assignments | | | | | | </b></u></center>
+    </h1>
+
+    <h1><u><b> Day 3 Assignment 1 </b></u></h1>
+
+    <h3> Take a number from a user and write a function which checks whether the number is even or odd. Assign the result to a variable and log that variable in the console.
+        <br>
+        <br>
+        Example Input: 23 <br>
+        Output: The number entered is 23 and Number is odd
+    </h3>
+    
+     
+    <h2>
+        <u><b>Results Of Code:</b></u>
+    </h2>
+
+    <h3> Press F12 To Open Console And See Your Results </h3>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1><u><b> Day 3 Assignment 2 </b></u></h1>
+
+    <h3> Write a program which will take OS name and version from the user separated by a space. Then log the OS name and version on the console.
+        <br>
+        <br>
+        Input: "Android 9"<br>
+        Output: The OS name is Android and version is 9
+    </h3>
+    
+     
+    <h2>
+        <u><b>Results Of Code:</b></u>
+    </h2>
+
+    <h3> Press F12 To Open Console And See Your Results </h3>
+
+    <h1><u><b> Day 3 Assignment 3 </b></u></h1>
+
+    <h3> Write a program to take marks as input from the user and grade him accordingly. Use Conditional statements. Also the same code using switch or ternary.
+        <br>
+        <br>
+        input: 50 <br>
+        Output : Marks are 50 and grade is B
+    </h3>
+    
+     
+    <h2>
+        <u><b>Results Of Code:</b></u>
+    </h2>
+
+    <h3> Press F12 To Open Console And See Your Results </h3>
+
+
+    <br>
+    <hr>
+    <br>
+    
+    
+    
+    <script>
+
+        user_num = prompt("Write Your Number And See In Console");
+
+        function IsOdd() {
+            
+            console.log("Your Results Are Here: ");
+            
+            if (user_num %2 == 0) {
+                console.log("Your Number " + user_num + " Is Even");
+            }
+
+            else {
+                console.log("Your Number " + user_num + " is Odd");
+            }
+
+        }
+        
+
+        IsOdd()
+
+        user = prompt("Write Your Android And Its Version")
+
+        android = user.slice(0,8);
+        version = user.slice(8);
+
+        console.log("Your OS Name Is " + android + " And Its Version Is " + version)
+
+
+
+
+        user_marks = prompt("Write Your Marks And See Grades In Cosole")
+
+        if (user_marks >= 90) {
+            console.log("| | | Congraculation You Haved Achived | | | <br>  | | | | |          A+ Grade        | | | | |")
+
+        }
+        
+        else if (user_marks <= 89 ) {
+            console.log("| | | Congraculation You Haved Achived | | | <br>  | | | | |          A Grade         | | | | |")
+        }
+
+        else if (user_marks >= 79 ) {
+            console.log("| | | Congraculation You Haved Achived | | | <br>  | | | | |          B Grade         | | | | |")
+        }
+
+        else if (user_marks <= 69 ) {
+            console.log("| | | Congraculation You Haved Achived | | | <br>  | | | | |          C Grade        | | | | |  <br> | | | | Better Luck Next Time | | | |")
+        }
+        
+        else {
+            console.log("| | | You Are Fail | | | ")
+        }
+
+    </script>
+
+</body>
+</html>
